@@ -2,9 +2,6 @@ package com.example.lightingapp;
 
 import static android.content.ContentValues.TAG;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,10 +10,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.lightingapp.LocalData.ArticleWithCategory;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.lightingapp.Model.Article;
 import com.example.lightingapp.Service.APIService;
 import com.example.lightingapp.Service.RetrofitInstance;
+import com.example.lightingapp.example.ui.activty.BlogActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -30,8 +30,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -84,15 +82,15 @@ public class SplashScreenActivity extends AppCompatActivity {
                                                                 Log.d("Whatsup", "Okey, alright 200");
                                                                 if (userData.getString("Sport", "0").equals("1") ||
                                                                         userData.getString("Technology", "0").equals("1") ||
-                                                                userData.getString("Science", "0").equals("1") ||
-                                                                userData.getString("Music", "0").equals("1") ||
-                                                                userData.getString("Food", "0").equals("1") ||
-                                                                userData.getString("Business", "0").equals("1") ||
-                                                                userData.getString("Games", "0").equals("1") ||
-                                                                userData.getString("Travel", "0").equals("1") ||
-                                                                userData.getString("Fashion", "0").equals("1")) {
+                                                                        userData.getString("Science", "0").equals("1") ||
+                                                                        userData.getString("Music", "0").equals("1") ||
+                                                                        userData.getString("Food", "0").equals("1") ||
+                                                                        userData.getString("Business", "0").equals("1") ||
+                                                                        userData.getString("Games", "0").equals("1") ||
+                                                                        userData.getString("Travel", "0").equals("1") ||
+                                                                        userData.getString("Fashion", "0").equals("1")) {
                                                                     Log.d("Whatsup", "Okey, alright");
-                                                                    Intent intent = new Intent(SplashScreenActivity.this, ArticlesListActivity.class);
+                                                                    Intent intent = new Intent(SplashScreenActivity.this, BlogActivity.class);
                                                                     startActivity(intent);
                                                                 } else if (userData.getString("Sport", "0").equals("0") &&
                                                                         userData.getString("Technology", "0").equals("0") &&
@@ -104,13 +102,14 @@ public class SplashScreenActivity extends AppCompatActivity {
                                                                         userData.getString("Travel", "0").equals("0") &&
                                                                         userData.getString("Fashion", "0").equals("0")) {
                                                                     Log.d("Whatsup", "Okey, not alright");
-                                                                    Intent intent = new Intent(SplashScreenActivity.this, ChooseCategoriesActivity.class);
+                                                                    Intent intent = new Intent(SplashScreenActivity.this, BlogActivity.class);
                                                                     //intent.putExtra("baseUrl", baseUrl);
                                                                     startActivity(intent);
                                                                 } else if (userData.contains("NotFirstEntrance") && userData.getString("NotFirstEntrance", "True").equals("True")) {
-                                                                    Intent intent = new Intent(SplashScreenActivity.this, ArticlesListActivity.class);
+                                                                    Intent intent = new Intent(SplashScreenActivity.this, BlogActivity.class);
                                                                     //intent.putExtra("baseUrl", baseUrl);
-                                                                    startActivity(intent); }
+                                                                    startActivity(intent);
+                                                                }
                                                             } else {
                                                                 Log.w("ResponseCode", String.valueOf(response.code()));
                                                             }
@@ -144,6 +143,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         thread.start();
 
     }
+
     private boolean isNetworkConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 

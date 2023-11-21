@@ -11,4 +11,7 @@ We also read saved addresses and profiles, newsletter settings, information abou
 From the logs, which also record information about Your activity in the Platform for security reasons, We can read the duration of one login, the actions You performed in the Platform, as well as information about the data filled in the forms. For optimal display of the Platform and services, We use information about Your operating system (for example Windows, macOS, Android, iOS), its version and technical data about the devices from which You log in (for example, the type of Your smartphone). This helps Us to constantly improve Our services and adapt them to Your technical capacities.
 We further anonymize the aforesaid data and use it for further development of Our services. Once the data has been made anonymous, We are no longer able to find out that this data is linked to You.
 You can find more information about the processing described in this chapter under Part D “Use of cookies and other technologies in the processing of Your personal data“.</string>
+    <string name="blog">Blog</string>
+    <string name="action_retry">Retry</string>
+    <string name="loading_error">Loading Error :/</string>
 </resources>
