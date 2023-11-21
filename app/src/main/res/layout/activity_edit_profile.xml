@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <ImageButton
+        android:id="@+id/backToProfileImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rectangle_8"
+        android:contentDescription="TODO"
+        android:padding="12dp"
+        android:src="@drawable/arrow_left_2_filled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/avatarCardView"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="134dp"
+        android:background="@drawable/circle_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="250dp">
+        <ImageView
+            android:id="@+id/editPhotoImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@drawable/edit_photo_icon"
+            android:focusable="true" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/deletePhotoTextView"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginTop="5dp"
+        android:text="Delete photo"
+        android:textSize="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatarCardView"
+        android:textAlignment="center"
+        android:onClick="deletePhoto"/>
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        style="@style/editProfileButtonsStyle"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rectangle_16_white"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="Username"
+        android:paddingLeft="22dp"
+        android:textColor="@color/gray"
+        app:flow_verticalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/changeCategoriesClickableRelativeLayout"
+        android:layout_width="252dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Your categories"
+            android:textColor="@color/basic_yellow"
+            android:textSize="24sp"
+            app:drawableStartCompat="@drawable/lightning_yellow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saveChangesClickableRelativeLayout"
+        android:layout_width="252dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rectangle_16_yellow"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Save changes"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:drawableStartCompat="@drawable/check_icon_white" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

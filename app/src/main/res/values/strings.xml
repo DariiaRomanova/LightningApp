@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LightingApp</string>
+    <string name="privacy_policy_h2_1">1. Who determines how personal data will be processed?</string>
+    <string name="privacy_policy_p_1">We at SportBet are the controller of Your personal data who determines the purposes and means of Your personal data processing as We are operating the Website flashsport.com (hereinafter referred to as the “Web“) and the SportBet mobile application (hereinafter referred to as the “Application“) (the Web and the Application are hereinafter jointly referred to as the “Platform“, unless each one of them is referred to individually) through which We provide services consisting in online content access in the field of sports news.</string>
+    <string name="privacy_policy_h2_2">2. What kind of personal data We are processing?</string>
+    <string name="privacy_policy_p_2">We are processing the categories of personal data specified below which We will also refer to in other parts of this document.</string>
+    <string name="privacy_policy_p_3">2.1 Data on the use of services and Your conduct on the Platform
+By logging in to the Platform\'s Web or application interface, You automatically send Us the IP address of Your device. If You have enabled the storage of so-called cookies in Your browser, You send Us information through them, for example about the sites You visit and user preferences on Your computer or mobile phone.
+
+We also read saved addresses and profiles, newsletter settings, information about displayed, shared and downloaded articles, monitored topics, search terms, Your preferences or Your rating of Our services. In order to recommend what You are interested in, We keep a history of the last 10 key words You have searched.
+From the logs, which also record information about Your activity in the Platform for security reasons, We can read the duration of one login, the actions You performed in the Platform, as well as information about the data filled in the forms. For optimal display of the Platform and services, We use information about Your operating system (for example Windows, macOS, Android, iOS), its version and technical data about the devices from which You log in (for example, the type of Your smartphone). This helps Us to constantly improve Our services and adapt them to Your technical capacities.
+We further anonymize the aforesaid data and use it for further development of Our services. Once the data has been made anonymous, We are no longer able to find out that this data is linked to You.
+You can find more information about the processing described in this chapter under Part D “Use of cookies and other technologies in the processing of Your personal data“.</string>
+</resources>

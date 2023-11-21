@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseCategoriesActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:lineHeight="48sp"
+        android:text="Choose your interests"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="p" />
+
+    <RelativeLayout
+        android:id="@+id/sportCatRelativeLayout"
+        android:layout_width="140dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toStartOf="@+id/musicCatRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Sport"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/musicCatRelativeLayout"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sportCatRelativeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Music"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/technologyCatRelativeLayout"
+        android:layout_width="243dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                style="@style/textViewCategoryStyle"
+                app:drawableLeftCompat="@drawable/lightning_yellow"
+                android:drawablePadding="5dp"
+                android:layout_centerInParent="true"
+                android:text="Technology" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scienceCatRelativeLayout"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toStartOf="@+id/foodCatRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Science"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/foodCatRelativeLayout"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/scienceCatRelativeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Food"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/businessCatRelativeLayout"
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="379dp"
+        android:layout_marginEnd="90dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            style="@style/textViewCategoryStyle"
+            app:drawableLeftCompat="@drawable/lightning_yellow"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            android:text="Business" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gamesCatRelativeLayout"
+        android:layout_width="173dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toStartOf="@+id/travelCatRelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Games"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/travelCatRelativeLayout"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gamesCatRelativeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="Travel"
+            app:drawableLeftCompat="@drawable/lightning_yellow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fashionCatRelativeLayout"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="531dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/rectangle_16_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onCategoryClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textViewCategoryStyle"
+            app:drawableLeftCompat="@drawable/lightning_yellow"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            android:text="Fashion" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/circle_white" />
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_yellow"
+            android:padding="12dp"
+            android:src="@drawable/arrow_right_filled" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="privacy_policy_header_style" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:lineHeight">27sp</item>
+        <item name="android:textFontWeight">800</item>
+    </style>
+
+    <style name="privacy_policy_par_style" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:lineHeight">21sp</item>
+    </style>
+</resources>

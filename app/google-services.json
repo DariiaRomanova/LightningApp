@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "295197374141",
+    "project_id": "lightingapp-d49ba",
+    "storage_bucket": "lightingapp-d49ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295197374141:android:ceff867177d5fde0a729d4",
+        "android_client_info": {
+          "package_name": "com.example.lightingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295197374141-acfq7mlri1b51bqg5hhhvgtau5supuit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lightingapp",
+            "certificate_hash": "0d23eef6005556078956ec72e9bcb3fe508e530d"
+          }
+        },
+        {
+          "client_id": "295197374141-r6hs2p1pfg98s9i2o3kgupqlrn2l5h6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf_Cbj8A7iLZr0Wx1wjfZUFHlNEpQgZ5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295197374141-r6hs2p1pfg98s9i2o3kgupqlrn2l5h6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

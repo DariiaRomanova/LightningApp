@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LightingApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.LightingApp" parent="Base.Theme.LightingApp" />
+
+    <style name="privacy_policy_header_style" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/basic_yellow</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="privacy_policy_par_style" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="imageCatStyle">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:src">@drawable/lightning_yellow</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+    <style name="textViewCategoryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/basic_yellow</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="textHorizontalMenuStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="profileButtonsStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginStart">105dp</item>
+        <item name="android:layout_marginEnd">106dp</item>
+        <item name="android:background">@drawable/rectangle_16_white</item>
+        <item name="android:clickable">true</item>
+         <item name="android:focusable">true</item>
+    </style>
+
+    <style name="editProfileButtonsStyle">
+        <item name="android:layout_width">252dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginStart">79dp</item>
+        <item name="android:layout_marginEnd">80dp</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+</resources>
